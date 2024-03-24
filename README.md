@@ -17,4 +17,5 @@ This repository contains code, that describes the distribution of images with di
 1. `git clone https://github.com/haiderali27/image_distribution_representations.git` or `git clone git@github.com:haiderali27/image_distribution_representations.git`
 2. Run the requirement File `pip install -r requirements.txt`
 3. You can run each Python file to recreate the image representation. (Representations are available in the data folder)
+4. You can also download data from this URL (https://drive.google.com/file/d/1bMEEoIEwwK4t_m43-TXpPyWjOaBHf4Fy/view?usp=drive_link). In this URL, you can use .pkl and .npy files to recreate your plots, since those files contains hours of worth of calculations. 
    
