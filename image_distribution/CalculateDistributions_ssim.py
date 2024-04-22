@@ -181,10 +181,6 @@ class CalculateImageDistribution:
                     matrix = self.calculate_distance_dataset_wd(self.dict_datasets[dataset_name], is_rgb)
                     self.dict_dataset_description[dataset_name] = self.dict_dataset_description[dataset_name] + f', matrix_nane:{martix_name}'
 
-         else: 
-                    matrix = self.calculate_distance_dataset_ssim(self.dict_datasets[dataset_name], is_rgb=is_rgb, winsize=winsize)
-                    self.dict_dataset_description[dataset_name] = self.dict_dataset_description[dataset_name] + f', matrix_nane:{martix_name}'
-
 
          self.dict_matrices[dataset_name] = matrix
 
@@ -204,9 +200,6 @@ class CalculateImageDistribution:
                     matrix = self.calculate_distance_dataset_wd(self.dict_datasets[dataset_name], is_rgb)
                     self.dict_dataset_description[dataset_name] = self.dict_dataset_description[dataset_name] + f', matrix_nane:{martix_name}'
 
-         else: 
-                    matrix = self.calculate_distance_dataset_ssim(self.dict_datasets[dataset_name], is_rgb=is_rgb, winsize=winsize)
-                    self.dict_dataset_description[dataset_name] = self.dict_dataset_description[dataset_name] + f', matrix_nane:{martix_name}'
 
 
          self.dict_matrices[dataset_name] = matrix
@@ -221,8 +214,6 @@ class CalculateImageDistribution:
          if martix_name == 'wd':
                     matrix = self.calculate_distance_datasets_wd(self.dict_datasets[dataset_name1], self.dict_datasets[dataset_name2], is_rgb)
 
-         else: 
-                matrix = self.calculate_distance_datasets_ssim(self.dict_datasets[dataset_name1], self.dict_datasets[dataset_name2], is_rgb=is_rgb, winsize=winsize)
 
 
 
