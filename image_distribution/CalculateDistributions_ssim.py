@@ -618,7 +618,7 @@ class CalculateImageDistribution:
     
     
 
-
+'''
 def calculate_distribution(title, dist_class, dist_class_path, include_grey=False, is_rgb=True, m_name='ssim'):
     anomaly_class_names = os.listdir(dist_class_path+'/test')
     anomaly_class_names.remove('good')
@@ -681,3 +681,4 @@ for target_class in list_mvtec:
           calculate_distribution(title, dist_class, dist_class_path, include_grey=True, is_rgb=True, m_name='ssim')  
 
 
+'''
