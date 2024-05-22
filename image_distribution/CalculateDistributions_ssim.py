@@ -590,11 +590,12 @@ class CalculateImageDistribution:
         #plt.show()
         plt.clf()
 
-    def plotNormalDistribution(self, intersection_matrix, color='k', normalize=False):
+    def plotNormalDistribution(self, intersection_matrix, color='k', normalize=False, invert_intersection=True):
         interesection_values = np.ravel(intersection_matrix)
         nan_mask = np.isnan(interesection_values)
         interesection_values = interesection_values[~nan_mask]
-
+        if invert_intersection==True:
+             interesection_values = 1 - interesection_values
 
         if normalize:
             min_value = np.min(interesection_values)
